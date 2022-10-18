@@ -23,7 +23,7 @@
     echo '<h1>' . $nomePessoa .' seu signo é ';
 
     //Iterando sobre o XML exibindo as informações
-    foreach ($xml->descricaoSignos as $registro) :
+    foreach ($xml->signo as $registro) :
         if ($dataSigno >= $registro->dataInicio and $dataSigno <= $registro->dataFim) {
             echo $registro->signoNome . '</h1>';
             echo '<p>' . $registro->descricao . '<p>';
