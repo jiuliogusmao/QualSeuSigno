@@ -25,7 +25,7 @@
     //Iterando sobre o XML exibindo as informações
     foreach ($xml->descricaoSignos as $registro) :
         if ($dataSigno >= $registro->dataInicio and $dataSigno <= $registro->dataFim) {
-            echo $registro->nomeSigno . '</h1>';
+            echo $registro->signoNome . '</h1>';
             echo '<p>' . $registro->descricao . '<p>';
         }
     endforeach;
